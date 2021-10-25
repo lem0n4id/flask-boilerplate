@@ -14,7 +14,7 @@ class FlaskClientTestCase(unittest.TestCase):
     # ensure that the site loads up correctly
     def test_home_page(self):
         response = self.client.get('/', content_type='html/text')
-        self.assertTrue(b"Hello from extended index.html" in response.data)
+        self.assertTrue(b"Hello World!" in response.data)
         
 if __name__ == "__main__":
     unittest.main()
